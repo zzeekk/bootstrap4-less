@@ -1,0 +1,23 @@
+{
+  "name": "bootstrap4-less",
+  "version": "4.0.0-alpha.6",
+  "description": "bootstrap 4 sass files converted to less",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "./node_modules/.bin/sass2less node_modules/bootstrap/scss/*.scss 'dist/{name}.less'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhudson8/bootstrap4-less.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jhudson8/bootstrap4-less/issues"
+  },
+  "homepage": "https://github.com/jhudson8/bootstrap4-less#readme",
+  "devDependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "less-plugin-sass2less": "^1.1.0"
+  }
+}
