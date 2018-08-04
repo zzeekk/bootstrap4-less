@@ -4,7 +4,7 @@
   "description": "bootstrap 4 sass files converted to less",
   "main": "index.js",
   "scripts": {
-    "prepublish": "./node_modules/.bin/sass2less node_modules/bootstrap/scss/*.scss 'dist/{name}.less'; grep -ilr 'scss' dist/* | xargs -I@ sed -i '' 's/scss/less/g' @;",
+    "prepublish": "./node_modules/.bin/sass2less node_modules/bootstrap/scss/*.scss \"dist/{name}.less\" && grep -ilr 'scss' dist/* | xargs -I@ sed -i 's/scss/less/g' @",
     "postpublish": "rm -rf dist"
   },
   "repository": {
